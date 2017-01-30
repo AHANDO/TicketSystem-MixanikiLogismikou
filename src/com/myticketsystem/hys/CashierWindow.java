@@ -535,9 +535,12 @@ public class CashierWindow extends JFrame {
 			finalTicketPrice = currentConcert.getPrice();
 		}
 
-		finalTicketPrice = Helper.getDiscountedPrice(finalTicketPrice);
-
 		final String ticketType = (ticketTypeCombo.getSelectedIndex() == 0) ? "Normal" : "Discounted";
+
+		if (ticketType=="Discounted"){
+			finalTicketPrice = Helper.getDiscountedPrice(finalTicketPrice);
+		}
+
 
 
 		if (seatTableMouseEvent != null && currentConcert != null) { 
