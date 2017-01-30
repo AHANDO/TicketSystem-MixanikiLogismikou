@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50505
 File Encoding         : 65001
 
-Date: 2017-01-30 00:39:43
+Date: 2017-01-30 22:11:12
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -27,23 +27,22 @@ CREATE TABLE `concerts` (
   `date` varchar(255) NOT NULL,
   `venue` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of concerts
 -- ----------------------------
-INSERT INTO `concerts` VALUES ('1', 'Kanye West', 'Kanye is the biggest star ever!!!', '55.00', '23.05.2024 22:12', 'Wembley Arena AAA');
-INSERT INTO `concerts` VALUES ('2', '2Pac', '2Pac is OK too', '40.00', '24.05.2024 22:00', 'Wembley Arena London');
-INSERT INTO `concerts` VALUES ('3', 'U2', 'They suck', '8.00', '24.05.2024 22:00', 'Wembley Arena London');
-INSERT INTO `concerts` VALUES ('4', 'Korn', 'Old School', '14.00', '24.05.2024 22:00', 'Wembley Arena London');
-INSERT INTO `concerts` VALUES ('5', 'Limp Bizkit', 'Lol', '23.00', '24.05.2024 22:00', 'Wembley Arena London');
-INSERT INTO `concerts` VALUES ('6', 'Billy Joel', 'Haha', '66.00', '24.05.2024 22:00', 'Wembley Arena London');
-INSERT INTO `concerts` VALUES ('7', 'Desiigner', '19yo, sounds like a 49yo', '345.00', '24.05.2024 22:00', 'Wembley Arena London');
-INSERT INTO `concerts` VALUES ('8', 'Flatbush Zombies', 'Bounce', '33.00', '24.05.2024 22:00', 'Wembley Arena London');
-INSERT INTO `concerts` VALUES ('9', 'Pusha-T', 'G.O.O.D. CEO', '5.00', '24.05.2024 22:00', 'Wembley Arena London');
-INSERT INTO `concerts` VALUES ('10', 'YTCracker', 'digitalgangster, where is 6um, 5um is dead', '15.00', '24.05.2024 22:00', 'Wembley Arena London');
-INSERT INTO `concerts` VALUES ('11', 'Flume', 'Australian Electro', '12.00', '24.05.2024 22:00', 'Wembley Arena London');
-INSERT INTO `concerts` VALUES ('14', 'New Concert', '', '10.00', '29.01.2017 21:36', '');
+INSERT INTO `concerts` VALUES ('1', 'Kanye West', 'Rapper and producer Kanye West is well known for his Grammy-winning music, successful fashion line and controversial antics', '255.00', '23.05.2024 22:12', 'Wembley Arena AAA');
+INSERT INTO `concerts` VALUES ('2', '2Pac', 'A hip-hop legend, with explicit and controversial lyrics, Tupac Shakur is coming back from the dead for an amazing show in Wembley!', '40.00', '24.05.2024 22:00', 'Wembley Arena London');
+INSERT INTO `concerts` VALUES ('3', 'U2', 'U2 are an Irish rock band from Dublin formed in 1976. The group consists of Bono (lead vocals and guitar), the Edge (guitar, keyboards, and backing vocals), Adam Clayton (bass guitar), and Larry Mullen Jr. (drums and percussion).', '8.00', '24.05.2024 22:00', 'Wembley Arena London');
+INSERT INTO `concerts` VALUES ('4', 'Korn', 'The band began their existence as the Bakersfield, California-based metal band LAPD, which included guitarists James \"Munky\" Shaffer and Brian \"Head\" Welch, bassist Reginald \"Fieldy\" Arvizu, and drummer David Silveria. ... They soon asked Davis to join the band, and upon his arrival the quintet rechristened itself Korn.', '34.00', '24.05.2024 22:00', 'Wembley Arena London');
+INSERT INTO `concerts` VALUES ('5', 'Limp Bizkit', 'Limp Bizkit is an American rap rock band from Jacksonville, Florida, formed in 1994', '26.00', '24.05.2024 22:00', 'Wembley Arena London');
+INSERT INTO `concerts` VALUES ('6', 'Billy Joel', 'William Martin \"Billy\" Joel (born May 9, 1949) is an American singer-songwriter and pianist.', '66.00', '24.05.2024 22:00', 'Wembley Arena London');
+INSERT INTO `concerts` VALUES ('7', 'Desiigner', 'Sidney Royel Selby III (born May 3, 1997), better known by his stage name Desiigner, is an American hip hop recording artist from Brooklyn, New York.', '34.00', '24.05.2024 22:00', 'Wembley Arena London');
+INSERT INTO `concerts` VALUES ('8', 'Flatbush Zombies', 'Flatbush Zombies (stylized as Flatbush ZOMBiES) is an American hip hop group from the Flatbush section of Brooklyn, New York City, formed in 2010.', '33.00', '24.05.2024 22:00', 'Wembley Arena London');
+INSERT INTO `concerts` VALUES ('9', 'Pusha-T', 'G.O.O.D. CEO', '14.00', '24.05.2024 22:00', 'Wembley Arena London');
+INSERT INTO `concerts` VALUES ('10', 'YTCracker', 'The DigitalGangster, currently working on resurrecting the dead 5um as 6um.', '15.00', '24.05.2024 22:00', 'Wembley Arena London');
+INSERT INTO `concerts` VALUES ('11', 'Flume', 'Harley Edward Streten, known professionally as Flume, is an Australian record producer, musician and DJ.', '22.00', '24.05.2024 22:00', 'Wembley Arena London');
 
 -- ----------------------------
 -- Table structure for transactions
@@ -84,7 +83,7 @@ CREATE TABLE `users` (
   `user_type` varchar(255) DEFAULT NULL,
   `enabled` tinyint(4) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of users
